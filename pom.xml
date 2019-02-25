@@ -293,6 +293,13 @@
             <version>3.2.6.v20190110-RELEASE</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.6</version>
+            <scope>provided</scope>
+        </dependency>
+
         <!--  EasyPOI   -->
         <dependency>
             <groupId>cn.afterturn</groupId>

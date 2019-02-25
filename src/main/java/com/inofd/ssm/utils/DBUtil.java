@@ -1,4 +1,4 @@
-package com.inofd.ssm.util;
+package com.inofd.ssm.utils;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
