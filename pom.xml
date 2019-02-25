@@ -15,7 +15,9 @@
         <!-- junit版本号 -->
         <junit.version>4.12</junit.version>
         <!-- mybatis版本号 -->
-        <mybatis.version>3.4.6</mybatis.version>
+        <mybatis.version>3.5.0</mybatis.version>
+        <!-- mybatis增强工具包 -->
+        <mybatis-plus.version>3.1.0</mybatis-plus.version>
         <!--   poi     -->
         <xerces.version>2.12.0</xerces.version>
         <poi.version>4.0.1</poi.version>
@@ -28,6 +30,13 @@
 
     <dependencies>
 
+        <!--单元测试依赖 -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>compile</scope>
+        </dependency>
         <!-- Spring 核心 -->
 
         <dependency>
@@ -74,7 +83,7 @@
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus</artifactId>
-            <version>3.0.7.1</version>
+            <version>${mybatis-plus.version}</version>
         </dependency>
         <dependency>
             <groupId>tk.mybatis</groupId>
@@ -164,12 +173,10 @@
             <version>1.9.2</version>
         </dependency>
 
-        <!--单元测试依赖 -->
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-expression</artifactId>
+            <version>${spring.version}</version>
         </dependency>
 
         <!-- log start -->
@@ -268,16 +275,17 @@
             <groupId>commons-fileupload</groupId>
             <artifactId>commons-fileupload</artifactId>
             <version>1.4</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>commons-io</artifactId>
+                    <groupId>commons-io</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.6</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-collections4</artifactId>
-            <version>4.3</version>
         </dependency>
         <dependency>
             <groupId>commons-beanutils</groupId>
@@ -300,7 +308,14 @@
             <scope>provided</scope>
         </dependency>
 
-        <!--  EasyPOI   -->
+        <!-- 校检 -->
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>6.0.12.Final</version>
+        </dependency>
+
+        <!--&lt;!&ndash;  EasyPOI   &ndash;&gt;
         <dependency>
             <groupId>cn.afterturn</groupId>
             <artifactId>easypoi-base</artifactId>
@@ -317,7 +332,7 @@
             <version>4.0.0</version>
         </dependency>
 
-        <!-- sax 读取时候用到的 -->
+        &lt;!&ndash; sax 读取时候用到的 &ndash;&gt;
         <dependency>
             <groupId>xerces</groupId>
             <artifactId>xercesImpl</artifactId>
@@ -331,19 +346,13 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- 校检 -->
-        <dependency>
-            <groupId>org.hibernate.validator</groupId>
-            <artifactId>hibernate-validator</artifactId>
-            <version>6.0.12.Final</version>
-        </dependency>
         <dependency>
             <groupId>org.apache.bval</groupId>
             <artifactId>org.apache.bval.bundle</artifactId>
             <version>1.1.0</version>
         </dependency>
 
-        <!-- PDF -->
+        &lt;!&ndash; PDF &ndash;&gt;
         <dependency>
             <groupId>com.itextpdf</groupId>
             <artifactId>itextpdf</artifactId>
@@ -356,7 +365,7 @@
             <artifactId>itext-asian</artifactId>
             <version>5.2.0</version>
             <optional>true</optional>
-        </dependency>
+        </dependency>-->
     </dependencies>
     <build>
         <plugins>
@@ -367,7 +376,7 @@
                 <version>9.4.14.v20181114</version>
                 <configuration>
                     <!--自动发现改变时间，进行热部署，默认是0，不热部署-->
-                    <scanIntervalSeconds>1</scanIntervalSeconds>
+                    <scanIntervalSeconds>0</scanIntervalSeconds>
                     <!--手动重加载 可选值 ：[automatic|manual]-->
                     <reload>automatic</reload>
                     <httpConnector>
