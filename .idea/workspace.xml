@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f79b9253-97c0-4d02-8d19-8bd08ef9173b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/inofd/ssm/module/user/controller/SysUserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/inofd/ssm/module/user/mapper/SysUserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/inofd/ssm/module/user/pojo/SysUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/inofd/ssm/module/user/service/SysUserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/inofd/ssm/module/user/service/impl/SysUserServiceImpl.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,6 +49,7 @@
         <counts>
           <entry key="JAVA" value="46" />
           <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="9" />
           <entry key="Properties" value="8" />
           <entry key="XML" value="228" />
         </counts>
@@ -61,22 +57,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="306">
-                <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-              </first_editor>
-              <second_editor>
-                <markdownNavigatorState />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -444,8 +425,16 @@
       <workItem from="1551182444559" duration="1541000" />
       <workItem from="1551184047912" duration="561000" />
       <workItem from="1551184712604" duration="4685000" />
-      <workItem from="1551190252991" duration="27000" />
+      <workItem from="1551190252991" duration="92000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1551190327938</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1551190327938</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -460,13 +449,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6814000" />
+    <option name="totallyTimeSpent" value="6879000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.329296" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.329296" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -518,6 +506,12 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/doc/db/init.sql">
