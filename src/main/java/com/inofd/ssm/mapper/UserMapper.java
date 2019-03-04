@@ -1,11 +1,18 @@
 package com.inofd.ssm.mapper;
 
-import org.springframework.stereotype.Repository;
+import com.inofd.ssm.domain.User;
 
-@Repository
+import java.util.List;
+
+/**
+* Created by Mybatis Generator 2019/03/04
+*/
 public interface UserMapper {
-    public void insertUser();
-    public void updateUser();
-    public void selectUser();
-    public void deleteUser();
+
+    User findUserById(Integer integer);
+    User findUserByIdResultMap(Integer integer);
+    List<User> findUserByName(String string);
+    void insertUser(User user);
+    void deleteUserById(Integer id);
+    void updatebyid(Integer id);
 }

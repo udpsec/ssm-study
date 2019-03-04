@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-
+    <properties resource="jdbc.properties"/>
     <settings>
         <!-- Globally enables or disables any caches configured in any mapper under this configuration -->
         <setting name="cacheEnabled" value="false"/>
@@ -14,17 +14,19 @@
          as some drivers deny compatibility but still work -->
         <setting name="useGeneratedKeys" value="true"/>
     </settings>
-    <!--&lt;!&ndash; Continue editing here &ndash;&gt;-->
-    <!--<environments default="dev">-->
-        <!--<environment id="dev">-->
-            <!--<transactionManager type="JDBC"></transactionManager>-->
-            <!--<dataSource type="POOLED">-->
-                <!--<property name="driver" value="${jdbc.driver}"/>-->
-                <!--<property name="url" value="${jdbc.url}"/>-->
-                <!--<property name="username" value="${jdbc.username}"/>-->
-                <!--<property name="password" value="${jdbc.password}"/>-->
-            <!--</dataSource>-->
-        <!--</environment>-->
-    <!--</environments>-->
-
+    <environments default="dev">
+        <environment id="dev">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+<mappers>
+    <mapper resource="mapper/UserMapper.xml"/>
+    <mapper resource="mapper/OrdersMapper.xml"/>
+</mappers>
 </configuration>
